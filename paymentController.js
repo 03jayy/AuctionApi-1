@@ -1,4 +1,4 @@
-const stripe = require("stripe")(/* your stripe Api key*/);
+const stripe = require("stripe")(/* your stripe Api key if you have one*/);
 exports.createPaymentSession = async (req, res) => {
   const { success_url, priceID, quantity } = req.body;
 
